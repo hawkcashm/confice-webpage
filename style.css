@@ -122,6 +122,10 @@ img {
     max-width: 100%;
 }
 
+#languageDropdown{
+    align : left;
+}
+
 #conficeLogo {
     height: 12rem;
     width:300px; /*container-width*/

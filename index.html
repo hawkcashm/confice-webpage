@@ -1,5 +1,133 @@
 <!DOCTYPE html>
 <html lang="cz">
+<script>
+    const lang = {
+        en: {
+            "menu-home": "Home",
+            "menu-about": "About Us",
+            "menu-portfolio": "Portfolio",
+            "menu-contacts": "Contacts",
+            "welcome-title": "Welcome",
+            "welcome-text": "to the website of Confice Ltd., a company focused on development" +
+                " and construction of individual technical solutions and putting them into production",
+            "languageDropdownButton": "Language",
+            "lang-cz": "Czech",
+            "lang-en": "English",
+            "h-services" : "Our Services",
+            "h-design" : "Construction plan",
+            "p-design" : "In 3D, fit to the customer's requirements.",
+            "h-documentation" : "Documentation",
+            "p-documentation" : "3D models, designs, service and user manuals.",
+            "h-calc" : "Calculations",
+            "p-calc" : "Static / Dynamic",
+            "h-pnd" : "Production and delivery",
+            "p-pnd" : "Arrangement of a complete production and delivery of the product as a whole.",
+            "h-about": "About us",
+            "p-about1": "Confice Ltd. was founded by three long-term partners after a number of successful projects" +
+                " in the field of construction and production of single-purpose machines. The motive for its establishment" +
+                " was to satisfy the increasing demand for our services, provided until now via unofficial business partnerships" +
+                " of individuals, and their improvement.",
+            "p-about2" : "Our vision is to establish ourselves on the market as a reliable and trustworthy company." +
+                " We want to achieve this by an individual, focused approach to individual projects, fair negotiations " +
+                "and carefully set pricing policy.",
+            "h-contact" : "Contact us",
+            "p-phonenum" : "+420 123 456 789",
+            "p-mail" : "mail@email.cz",
+            "p-address1" : "420 Yeet Street",
+            "p-address2" : "Hradec Králové, Czech Republic, 500 00",
+            "h-hours" : "Our hours",
+            "p-hours1" : "Mon-Fri 00:00-24:00",
+            "p-hours2" : "Sat-Sun Closed"
+        },
+        cz: {
+            "menu-home": "Úvod",
+            "menu-about": "O Nás",
+            "menu-portfolio": "Portfolio",
+            "menu-contacts": "Kontakty",
+            "welcome-title": "Vítejte",
+            "welcome-text": "na stránkách firmy Confice s.r.o., společnosti zaměřené na vývoj a konstrukci " +
+                "individuálních technických řešení a na jejich a uvedení do výroby.",
+            "languageDropdownButton": "Jazyk",
+            "lang-cz": "Česky",
+            "lang-en": "Anglicky",
+            "h-services" : "Naše služby",
+            "h-design" : "Konstrukční návrh",
+            "p-design" : "Ve 3D, na míru dle požadavků zákazníka.",
+            "h-documentation" : "Dokumentace",
+            "p-documentation" : "3D modely, výkresy, údržbové a uživatelské manuály.",
+            "h-calc" : "Výpočty",
+            "p-calc" : "Statické / Dynamické",
+            "h-pnd" : "Výroba a dodání",
+            "p-pnd" : "Zařízení kompletní výroby a dodání objednaného zařízení jako celku.",
+            "h-about": "O nás",
+            "p-about1": "Společnost Confice s.r.o. vznikla za účasti tří dlouhodobých partnerů po řadě úspěšných projektů" +
+                " v oblasti konstrukce a výroby jednoúčelových strojů. Motivem pro její založení bylo uspokojení zvyšující" +
+                " se poptávky po službách, do té doby poskytovaných v rámci neoficiálního obchodního partnerství fyzických" +
+                " osob, a jejich zkvalitnění.",
+            "p-about2" : "Naší vizí je prosadit se na trhu jako spolehlivá důvěryhodná firma." +
+                "Toho chceme docílit individuálním soustředěným přístupem k jednotlivým projektům," +
+                "férovým jednáním a pečlivě nastavenou cenovou politikou.",
+            "h-contact" : "Kontaktujte nás",
+            "p-phonenum" : "+420 123 456 789",
+            "p-mail" : "mail@email.cz",
+            "p-address1" : "420 Yeet Street",
+            "p-address2" : "Hradec Králové, Česká Republika, 500 00",
+            "h-hours" : "Otevírací doba",
+            "p-hours1" : "Po-Pá 00:00-24:00",
+            "p-hours2" : "So-Ne Zavřeno"
+
+
+        }
+    };
+
+    var getFirstBrowserLanguage = function () {
+        var nav = window.navigator,
+            browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
+            i,
+            language;
+
+        // support for HTML 5.1 "navigator.languages"
+        if (Array.isArray(nav.languages)) {
+            for (i = 0; i < nav.languages.length; i++) {
+                language = nav.languages[i];
+                if (language && language.length) {
+                    return language;
+                }
+            }
+        }
+
+        // support for other well known properties in browsers
+        for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
+            language = nav[browserLanguagePropertyKeys[i]];
+            if (language && language.length) {
+                return language;
+            }
+        }
+
+        return null;
+    };
+
+    function setLanguage(selected) {
+        console.log("changing language");
+        for (key in lang[selected]) {
+            document.getElementById(key).innerHTML = lang[selected][key];
+        }
+
+
+    }
+
+    function setFirstLanguage() {
+        var preferred = getFirstBrowserLanguage();
+        if (preferred.includes("en")) {
+            setLanguage("en");
+        } else if (preferred.includes("cz") || preferred.includes("cs") || preferred.includes("sk")) {
+            setLanguage("cz");
+        } else {
+            setLanguage("en");//default
+        }
+    }
+
+</script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +138,7 @@
     <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" onload="setFirstLanguage()">
 <!-- Navigation -->
 <div id="top"></div>
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -23,10 +151,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li><a class="nav-link active" href="#top">Úvod</a></li>
-                <li><a class="nav-link" href="#about">O nás</a></li>
-                <li><a class="nav-link" href="#">Portfolio</a></li>
-                <li><a class="nav-link" href="#contacts">Kontakty</a></li>
+                <li><a id="menu-home" class="nav-link active" href="#top">Úvod</a></li>
+                <li><a id="menu-about" class="nav-link" href="#about">O nás</a></li>
+                <li><a id="menu-portfolio" class="nav-link" href="#">Portfolio</a></li>
+                <li><a id="menu-contacts" class="nav-link" href="#contacts">Kontakty</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="languageDropdownButton"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Jazyk
+                        </a>
+                        <div id="languageDropdown" class="dropdown-menu" aria-labelledby="languageDropdownButton">
+                            <a id="lang-cz" class="dropdown-item">Česky</a>
+                            <a id="lang-en" class="dropdown-item">Anglicky</a>
+                            <script>
+                                document.getElementById("lang-cz").addEventListener("click", evt => setLanguage("cz"));
+                                document.getElementById("lang-en").addEventListener("click", evt => setLanguage("en"));
+                            </script>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -44,8 +188,9 @@
         <div class="carousel-item active">
             <img src="img/drill-444493_1920.png">
             <div class="carousel-caption">
-                <h1 class="display-2">Vítejte</h1>
-                <h3> na stránkách firmy Confice s.r.o., společnosti zaměřené na vývoj a konstrukci individuálních technických řešení a na jejich a uvedení do výroby. </h3>
+                <h1 id="welcome-title" class="display-2">Vítejte</h1>
+                <h3 id="welcome-text">na stránkách firmy Confice s.r.o., společnosti zaměřené na vývoj a konstrukci
+                    individuálních technických řešení a na jejich a uvedení do výroby.</h3>
                 <!--
                 <a href="#" class="btn btn-outline-light bt-lg">Start course</a>
                 -->
@@ -82,7 +227,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center text-center mt-4">
         <div class="col-md-11 col-lg-9">
-            <h1 class="display-5">Naše služby</h1>
+            <h1 id="h-services" class="display-5">Naše služby</h1>
             <p class="lead"></p>
         </div>
     </div>
@@ -93,23 +238,23 @@
     <div class="row text-center">
         <div class="col-sm-6 col-md-3">
             <img src="img/icons/wrench-ico.png"></img>
-            <h3>Konstrukční návrh</h3>
-            <p>Ve 3D, na míru dle požadavků zákazníka.</p>
+            <h3 id="h-design">Konstrukční návrh</h3>
+            <p id="p-design">Ve 3D, na míru dle požadavků zákazníka.</p>
         </div>
         <div class="col-sm-6 col-md-3">
             <img src="img/icons/manual-ico.png"></img>
-            <h3>Dokumentace</h3>
-            <p>3D modely, výkresy, údržbové a uživatelské manuály.</p>
+            <h3 id="h-documentation">Dokumentace</h3>
+            <p id="p-documentation">3D modely, výkresy, údržbové a uživatelské manuály.</p>
         </div>
         <div class="col-sm-6 col-md-3">
             <img src="img/icons/vypocty-ico.png"></img>
-            <h3>Výpočty</h3>
-            <p>Statické / Dynamické</p>
+            <h3 id="h-calc">Výpočty</h3>
+            <p id="p-calc">Statické / Dynamické</p>
         </div>
         <div class="col-md-3">
             <img src="img/icons/solution-ico.png"></img>
-            <h3>Výroba a dodání</h3>
-            <p>Zařízení kompletní výroby a dodání objednaného zařízení jako celku.</p>
+            <h3 id="h-pnd">Výroba a dodání</h3>
+            <p id="p-pnd">Zařízení kompletní výroby a dodání objednaného zařízení jako celku.</p>
         </div>
     </div>
 </div>
@@ -119,11 +264,13 @@
 <div class="container-fluid">
     <div class="row my-5 mx-3">
         <div class="col-lg-6">
-            <h2>O nás</h2>
-            <p>Společnost Confice s.r.o. vznikla za účasti tří dlouhodobých partnerů po řadě úspěšných projektů v oblasti konstrukce a výroby jednoúčelových strojů.
-                Motivem pro její založení bylo uspokojení zvyšující se poptávky po službách, do té doby poskytovaných v rámci neoficiálního obchodního partnerství
+            <h2 id="h-about">O nás</h2>
+            <p id="p-about1">Společnost Confice s.r.o. vznikla za účasti tří dlouhodobých partnerů po řadě úspěšných projektů v
+                oblasti konstrukce a výroby jednoúčelových strojů.
+                Motivem pro její založení bylo uspokojení zvyšující se poptávky po službách, do té doby poskytovaných v
+                rámci neoficiálního obchodního partnerství
                 fyzických osob a jejich zkvalitnění.</p>
-            <p>Naší vizí je prosadit se na trhu jako spolehlivá důvěryhodná firma.
+            <p id="p-about2">Naší vizí je prosadit se na trhu jako spolehlivá důvěryhodná firma.
                 Toho chceme docílit individuálním soustředěným přístupem k jednotlivým projektům,
                 férovým jednáním a pečlivě nastavenou cenovou politikou.</p>
 
@@ -194,29 +341,29 @@
     <div id="contacts" class="container-fluid">
         <div class="row text-center">
             <div class="col-md-6">
-                <h5>Kontaktujte nás</h5>
+                <h5 id="h-contact">Kontaktujte nás</h5>
                 <hr class="border">
-                <p>+420 123 456 789</p>
-                <p>mail@email.cz</p>
-                <p>420 Yeet Street</p>
-                <p>Hradec Králové, Czech Republic, 500 00</p>
+                <p id="p-phonenum">+420 123 456 789</p>
+                <p id="p-mail">mail@email.cz</p>
+                <p id="p-address1">420 Yeet Street</p>
+                <p id="p-address2">Hradec Králové, Česká Republika, 500 00</p>
             </div>
             <div class="col-md-6">
-                <h5>Otevírací doba</h5>
+                <h5 id="h-hours">Otevírací doba</h5>
                 <hr class="border">
-                <p>Po-Pá 00:00-24:00</p>
-                <p>So-Ne zavřeno</p>
+                <p id="p-hours1">Po-Pá 00:00-24:00</p>
+                <p id="p-hours2">So-Ne zavřeno</p>
             </div>
-             <!--
-            <div class="col-md-4">
-                <h5>Service area</h5>
-                <hr class="border">
-                <p>Hradec Králové, Czech Republic, 500 00</p>
-                <p>Hradec Králové, Czech Republic, 500 00</p>
-                <p>Hradec Králové, Czech Republic, 500 00</p>
-                <p>Hradec Králové, Czech Republic, 500 00</p>
-            </div>
-            -->
+            <!--
+           <div class="col-md-4">
+               <h5>Service area</h5>
+               <hr class="border">
+               <p>Hradec Králové, Czech Republic, 500 00</p>
+               <p>Hradec Králové, Czech Republic, 500 00</p>
+               <p>Hradec Králové, Czech Republic, 500 00</p>
+               <p>Hradec Králové, Czech Republic, 500 00</p>
+           </div>
+           -->
             <!--
             <div class="col-12">
                 <hr class="socket">
