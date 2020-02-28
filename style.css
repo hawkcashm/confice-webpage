@@ -65,7 +65,8 @@ html, body {
     padding: 1rem;
     border-radius: 0;
 }
-.carousel-item img{
+
+.car1   {
     width:100%; /*container-width*/
     overflow:hidden; /*hide bounds of image */
     margin:0;
@@ -73,6 +74,7 @@ html, body {
     margin-top: -10%;
     margin-bottom: -10%;
 }
+
 
 .fa-html5 {
     font-size: 5rem;
@@ -121,6 +123,19 @@ footer {
 img {
     max-width: 100%;
 }
+img.portfolio-img {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+img.portfolio-img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
 
 #languageDropdown{
     align : left;
@@ -136,6 +151,15 @@ img {
     margin-bottom: -23%;
 }
 
+#titleIcon {
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    overflow:hidden; /*hide bounds of image */
+    margin:0;
+    display:block;
+    margin-right: 90%;
+}
 /*---Media Queries --*/
 
 @media (max-width: 991px) {
