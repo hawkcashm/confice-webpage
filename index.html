@@ -31,7 +31,6 @@
                 <li><a id="menu-home" class="nav-link active" href="#top">Úvod</a></li>
                 <li><a id="menu-about" class="nav-link" href="#about">O nás</a></li>
                 <li><a id="menu-job" class="nav-link" href="#job">Kariéra</a></li>
-                <!--<li><a id="menu-portfolio" class="nav-link" href="#">Portfolio</a></li>-->
                 <li><a id="menu-contacts" class="nav-link" href="#contacts">Kontakty</a></li>
                 <li>
                     <div class="dropdown">
@@ -45,7 +44,7 @@
                             <script>
                                 let lang;
 
-                                function setUp(){
+                                function setUp() {
                                     lang = new Language();
                                     lang.setFirstLanguage();
                                 }
@@ -59,7 +58,6 @@
             </ul>
         </div>
     </div>
-
 </nav>
 
 <!--- Image Slider -->
@@ -104,7 +102,6 @@
 <!--- Four Column Section -->
 <div class="container-fluid">
     <div class="row text-center icons-section">
-        </a>
         <a class="col-sm-6 col-md-4 spaced cards" href="#development">
             <div class="navCard">
                 <img src="img/icons/vypocty-ico.png" alt=""/>
@@ -112,18 +109,20 @@
             </div>
         </a>
         <a class="col-sm-6 col-md-4 spaced cards" href="#construction">
-        <div class="navCard">
-        <img src="img/icons/wrench-ico.png" alt=""/>
-        <h3 id="h-design">Konstrukce</h3>
-    </div>
-        <a class="col-sm-6 col-md-4 spaced cards" href="#production">
             <div class="navCard">
-                <img src="img/icons/solution-ico.png" alt=""/>
-                <h3 id="h-production">Výroba</h3>
+                <img src="img/icons/wrench-ico.png" alt=""/>
+                <h3 id="h-design">Konstrukce</h3>
             </div>
+            <a class="col-sm-6 col-md-4 spaced cards" href="#production">
+                <div class="navCard">
+                    <img src="img/icons/solution-ico.png" alt=""/>
+                    <h3 id="h-production">Výroba</h3>
+                </div>
+            </a>
         </a>
     </div>
 </div>
+
 
 <!-- About us -->
 <div id="about"></div>
@@ -132,20 +131,36 @@
 <!--- Two Column Section -->
 <div class="container-fluid">
     <div class="row my-5 mx-3">
-        <div class="col-lg-6">
-            <h2 id="h-about">O nás</h2>
-            <p id="p-about1">Společnost Confice s.r.o. vznikla v roce 2018, jako společnost dodávající zkušební a měřící přípravky odběratelům v automotive.
-                Za dobu působení se naše činnost rozrostla zejména o oblast konstrukce a výroby jednoúčelových strojů a o vlastní výrobní kapacity.
-                Neustále usilujeme o zvětšení rozsahu našich služeb a jejich zkvalitnění, tak, abychom celistvě pokrývali potřeby našich zákazníků.</p>
-            <p id="p-about2">Naší vizí je prosadit se na trhu jako spolehlivá důvěryhodná firma díky komplexnímu a individuálnímu přístupu k zákazníkům, jejich projektům a potřebám.</p>
+        <div class="parent">
+            <div class="section-text">
+                <h2 id="h-about">O nás</h2>
+                <p id="p-about1">Společnost Confice s.r.o. vznikla v roce 2018, jako společnost dodávající zkušební a
+                    měřící přípravky odběratelům v automotive.
+                    Za dobu působení se naše činnost rozrostla zejména o oblast konstrukce a výroby jednoúčelových
+                    strojů a o vlastní výrobní kapacity.
+                    Neustále usilujeme o zvětšení rozsahu našich služeb a jejich zkvalitnění, tak, abychom celistvě
+                    pokrývali potřeby našich zákazníků.</p>
+                <p id="p-about2">Naší vizí je prosadit se na trhu jako spolehlivá důvěryhodná firma díky komplexnímu a
+                    individuálnímu přístupu k zákazníkům, jejich projektům a potřebám.</p>
+            </div>
+            <div id="aboutImg">
+                <img src="img/confice.svg" alt="">
+            </div>
+        </div>
 
-        </div>
-        <div class="col-lg-6">
-            <img src="img/woman.jpg" alt="">
-        </div>
     </div>
 
 </div>
+
+<!--- Fixed background -->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed">
+        </div>
+    </div>
+</figure>
+
+
 
 <!-- Development -->
 <div id="development"></div>
@@ -156,8 +171,11 @@
     <div class="row my-5 mx-3 parent">
         <div class="section-text">
             <h2 id="h-development-section">Vývoj</h2>
-            <p id="p-development-section-1">Můžeme být Vašimi partnery v jakékoliv vývojové etapě Vašeho projektu - budeme spolupracovat na úvodním konceptu, provedeme prvotní konstrukční iterace, realizujeme pro Vás prototypovou výrobu.</p>
-            <p id="p-development-section-2">Připravíme pro Vás podklady pro zavedení sériové výroby, zajistíme dodavatelský řetězec.</p>
+            <p id="p-development-section-1">Můžeme být Vašimi partnery v jakékoliv vývojové etapě Vašeho projektu -
+                budeme spolupracovat na úvodním konceptu, provedeme prvotní konstrukční iterace, realizujeme pro Vás
+                prototypovou výrobu.</p>
+            <p id="p-development-section-2">Připravíme pro Vás podklady pro zavedení sériové výroby, zajistíme
+                dodavatelský řetězec.</p>
         </div>
         <div id="devImg1">
             <img class="portfolio-img" src="img/vývoj3.jpg" alt="">
@@ -186,8 +204,10 @@
         <div class="section-text">
             <h2 id="h-construction-section">Konstrukce</h2>
             <p id="p-construction-section-1">Pracujeme v programu Autodesk Inventor.</p>
-            <p id="p-construction-section-2" >Dle Vaší specifikace zpracujeme 3D a 2D dokumentaci, provedeme výpočty, simulace, rendery, vytvoříme kusovníky manuály a technologické postupy.</p>
-            <p id="p-construction-section-3" >Zadání může mít formu vstupních 3D modelů, požadavku na provedení kontrolní operace, či pracovního cyklu.</p>
+            <p id="p-construction-section-2">Dle Vaší specifikace zpracujeme 3D a 2D dokumentaci, provedeme výpočty,
+                simulace, rendery, vytvoříme kusovníky manuály a technologické postupy.</p>
+            <p id="p-construction-section-3">Zadání může mít formu vstupních 3D modelů, požadavku na provedení kontrolní
+                operace, či pracovního cyklu.</p>
 
 
         </div>
@@ -217,8 +237,10 @@
             <p id="p-production-section-1">Nabízíme tříosé obrábění lehkých slitin, plastů a umělého dřeva do rozměru
                 polotovaru 400x300x140 mm. Programujeme a sestavujeme automatizační celky s PLC Siemens, RevPi a
                 dalšími. Provádíme sestavení a oživení pracovních stanic a strojů.</p>
-            <p id="p-production-section-2">Zajistíme dodávku výpalků, soustružených dílů, svařenců a dalších polotovarů.</p>
-            <p id="p-production-section-3">Jsme vybaveni běžnými strojírenskými měřidly pro posuzování shody vyráběných dílů.
+            <p id="p-production-section-2">Zajistíme dodávku výpalků, soustružených dílů, svařenců a dalších
+                polotovarů.</p>
+            <p id="p-production-section-3">Jsme vybaveni běžnými strojírenskými měřidly pro posuzování shody vyráběných
+                dílů.
                 Kontrolní přípravky dodáme seřízené s měřícím protokolem z CMM. Je možné provést MSA analýzu.
                 Pro stanovené výrobky zajistíme CE certifikaci.
             </p>
@@ -247,18 +269,6 @@
 
 </div>
 
-
-<!--- Fixed background -->
-<figure>
-    <div class="fixed-wrap">
-        <div id="fixed">
-        </div>
-    </div>
-</figure>
-
-<div id="job"></div>
-<br>
-<br>
 
 <!--- Footer -->
 <footer>
