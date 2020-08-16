@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d5cefe2-b68f-4521-a162-9ff8c2c8d579" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/language.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/form-processing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg-blu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/confice.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/desk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/drill-444493_1920.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/docu-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/manual-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/solution-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/vypocty-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/wrench-ico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/woman.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language.js" beforeDir="false" afterPath="$PROJECT_DIR$/language.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/language.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="93" selection-start-line="27" selection-start-column="93" selection-end-line="27" selection-end-column="93" />
+            <state relative-caret-position="300">
+              <caret line="102" column="68" lean-forward="true" selection-start-line="102" selection-start-column="68" selection-end-line="102" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -30,8 +42,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3725">
-              <caret line="149" column="49" selection-start-line="149" selection-start-column="36" selection-end-line="149" selection-end-column="49" />
+            <state relative-caret-position="175">
+              <caret line="220" column="41" selection-start-line="220" selection-start-column="41" selection-end-line="220" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/texty (1).txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -39,8 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="9425">
+              <caret line="377" column="1" selection-start-line="377" selection-start-column="1" selection-end-line="377" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form-processing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -63,9 +93,23 @@
       <find>console.log</find>
       <find>mini</find>
       <find>carouse</find>
+      <find>false</find>
+      <find>&quot;false&quot;</find>
+      <find>&quot;block&quot;</find>
+      <find>(&quot;display&quot;, &quot;none&quot;)</find>
+      <find>setLa</find>
+      <find>id=&quot;ab</find>
+      <find>head</find>
+      <find>img</find>
+      <find>type</find>
+      <find>cz</find>
+      <find>czc</find>
     </findStrings>
     <replaceStrings>
       <replace>includes</replace>
+      <replace>display</replace>
+      <replace>&quot;block&quot;</replace>
+      <replace>&quot;none&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -78,7 +122,9 @@
         <option value="$PROJECT_DIR$/Bootstrap Site Starter Files/index.html" />
         <option value="$PROJECT_DIR$/confice/style.css" />
         <option value="$PROJECT_DIR$/confice/index.html" />
+        <option value="$PROJECT_DIR$/dndscript.js" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/form-processing.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/language.js" />
       </list>
@@ -94,6 +140,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,7 +152,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,16 +189,40 @@
       <workItem from="1582717481594" duration="200000" />
       <workItem from="1582742063307" duration="6818000" />
       <workItem from="1582763209698" duration="11298000" />
+      <workItem from="1590398282124" duration="176000" />
+      <workItem from="1590929049679" duration="4368000" />
+      <workItem from="1590942458395" duration="5252000" />
+      <workItem from="1591353273079" duration="19254000" />
+      <workItem from="1597610482307" duration="124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37617000" />
+    <option name="totallyTimeSpent" value="69324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1195366" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.44555557" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1195366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -165,27 +235,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31333333" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.043333333" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1197318" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -200,24 +251,42 @@
     <entry file="file://$PROJECT_DIR$/Bootstrap Site Starter Files/index.html" />
     <entry file="file://$PROJECT_DIR$/confice/style.css" />
     <entry file="file://$PROJECT_DIR$/confice/index.html" />
+    <entry file="file://D:/GitProjects/kaj/kaj-cviceni/semestralni-prace/index.html" />
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="9425">
+          <caret line="377" column="1" selection-start-line="377" selection-start-column="1" selection-end-line="377" selection-end-column="1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/language.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3725">
-          <caret line="149" column="49" selection-start-line="149" selection-start-column="36" selection-end-line="149" selection-end-column="49" />
+        <state relative-caret-position="175">
+          <caret line="220" column="41" selection-start-line="220" selection-start-column="41" selection-end-line="220" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form-processing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texty (1).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/language.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="93" selection-start-line="27" selection-start-column="93" selection-end-line="27" selection-end-column="93" />
+        <state relative-caret-position="300">
+          <caret line="102" column="68" lean-forward="true" selection-start-line="102" selection-start-column="68" selection-end-line="102" selection-end-column="68" />
         </state>
       </provider>
     </entry>
